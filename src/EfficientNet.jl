@@ -1,9 +1,12 @@
 module EfficientNet
-export EffNet
 
 using Downloads: download
 using Pickle
 using Flux
+
+using Flux: flatten
+
+export EffNet, MBConv
 
 include("params.jl")
 include("mb.jl")
